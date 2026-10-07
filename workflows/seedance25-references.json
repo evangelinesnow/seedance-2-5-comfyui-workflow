@@ -1,0 +1,68 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Character (@Image 1)"
+    },
+    "inputs": {
+      "image": "example.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Voice (@Audio 1)"
+    },
+    "inputs": {
+      "audio": "your-voice.wav"
+    }
+  },
+  "3": {
+    "class_type": "Seedance25References",
+    "_meta": {
+      "title": "Seedance 2.5 References"
+    },
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "audio": [
+        "2",
+        0
+      ],
+      "urls": ""
+    }
+  },
+  "4": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "The character in @Image 1 looks into the camera and says the line in @Audio 1, lips matching every word. Soft window light, static medium close-up. No subtitles, no music.",
+      "duration": 6,
+      "resolution": "720p",
+      "aspect_ratio": "9:16",
+      "generate_audio": true,
+      "take": 0,
+      "refs": [
+        "3",
+        0
+      ]
+    }
+  },
+  "5": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "4",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  }
+}

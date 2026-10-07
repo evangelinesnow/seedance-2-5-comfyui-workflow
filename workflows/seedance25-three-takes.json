@@ -1,0 +1,83 @@
+{
+  "1": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "A red fox trots through fresh snow at dawn, low tracking shot, breath visible in the cold air.",
+      "duration": 4,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 0
+    }
+  },
+  "2": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "A red fox trots through fresh snow at dawn, low tracking shot, breath visible in the cold air.",
+      "duration": 4,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 1
+    }
+  },
+  "3": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "A red fox trots through fresh snow at dawn, low tracking shot, breath visible in the cold air.",
+      "duration": 4,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 2
+    }
+  },
+  "4": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "1",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  },
+  "5": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "2",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  },
+  "6": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "3",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  }
+}

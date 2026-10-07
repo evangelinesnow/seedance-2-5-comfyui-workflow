@@ -1,0 +1,42 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "First frame"
+    },
+    "inputs": {
+      "image": "example.png"
+    }
+  },
+  "2": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "The camera pushes in slowly while a light breeze moves through the scene; keep everything in the first frame as it is.",
+      "duration": 5,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 0,
+      "first_frame": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "2",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  }
+}

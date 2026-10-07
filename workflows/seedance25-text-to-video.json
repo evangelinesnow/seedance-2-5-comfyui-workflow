@@ -1,0 +1,29 @@
+{
+  "1": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "A slow aerial shot glides over a foggy pine forest at sunrise; the mist thins as the sun clears the ridge. Sound: wind in the trees, distant birdsong.",
+      "duration": 5,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 0
+    }
+  },
+  "2": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "1",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  }
+}

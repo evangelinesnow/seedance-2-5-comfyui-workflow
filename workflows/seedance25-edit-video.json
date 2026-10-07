@@ -1,0 +1,42 @@
+{
+  "1": {
+    "class_type": "LoadVideo",
+    "_meta": {
+      "title": "Clip to edit (4-30 s)"
+    },
+    "inputs": {
+      "file": "your-clip.mp4"
+    }
+  },
+  "2": {
+    "class_type": "Seedance25Submit",
+    "_meta": {
+      "title": "Seedance 2.5 Submit"
+    },
+    "inputs": {
+      "prompt": "Change only the weather to light snowfall: snow settling on surfaces and colder light. Keep every person, movement and the camera move unchanged.",
+      "duration": 5,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "take": 0,
+      "edit_video": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "Seedance25Result",
+    "_meta": {
+      "title": "Seedance 2.5 Result"
+    },
+    "inputs": {
+      "request_id": [
+        "2",
+        0
+      ],
+      "max_wait_minutes": 60
+    }
+  }
+}
