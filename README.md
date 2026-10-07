@@ -30,8 +30,8 @@ entry point.
 From the ComfyUI `custom_nodes` directory:
 
 ```bash
-git clone https://github.com/OWNER/seedance-2-5-comfyui-workflow.git
-cd seedance-2-5-comfyui
+git clone https://github.com/evangelinesnow/seedance-2-5-comfyui-workflow.git
+cd seedance-2-5-comfyui-workflow
 # ComfyUI supplies Pillow and numpy; install them only if your distribution is missing either dependency.
 ```
 
@@ -103,7 +103,9 @@ are not charged. The account concurrency limit is 50 Seedance 2.5 jobs.
 - **503**: keep the `request_id` and retry the status call after `Retry-After`;
   do not create a duplicate job automatically.
 - **first/last frame rejects the ratio**: leave the node at `adaptive`.
-- **audio-only reference fails**: attach an image or video as well.
+- **audio reference is rejected**: check the current model contract and the
+  total reference count; audio-only references are supported by the current
+  Seedance 2.5 contract, so do not add an unrelated visual asset as a workaround.
 - **ComfyUI cannot import the pack**: check the server log and make sure the
   V3 ComfyUI build and its bundled Pillow/numpy versions are installed.
 
